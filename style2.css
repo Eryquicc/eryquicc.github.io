@@ -22,3 +22,27 @@ body, html {
     transform: translateX(-50%);
   }
 }
+
+p,li,h1,h2,h3,h4,a,button {
+    color: white;
+    font-family: monospace;
+}
+body {
+    background-image: url("PrairieWind.png");
+    background-repeat: repeat;
+}
+/* Example for h1 heading with background */
+h1,h2 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 1); /* Use an appropriate color for the background */
+    padding: 10px; /* Add some padding to create space between text and background */
+    margin: 0px;
+}
+  
+  /* Example for paragraphs (p) with background */
+p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 1); /* Use an appropriate color for the background */
+    padding: 5px; /* Add some padding to create space between text and background */
+    margin: 0px;
+}
