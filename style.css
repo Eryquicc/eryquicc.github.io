@@ -1,0 +1,44 @@
+p,li,h1,h2,h3,h4 {
+    color: white;
+    font-family: monospace;
+}
+a:link {
+    color: white
+}
+a:visited {
+    color: white
+}
+
+body {
+    background-image: url("PrairieWind.png");
+    background-repeat: repeat;
+  }
+
+html {
+    margin: 5;
+}
+
+/* Example for h1 heading with background */
+h1 {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 1); /* Use an appropriate color for the background */
+    padding: 10px; /* Add some padding to create space between text and background */
+  }
+  
+  /* Example for paragraphs (p) with background */
+  p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 1); /* Use an appropriate color for the background */
+    padding: 5px; /* Add some padding to create space between text and background */
+  }
+
+  .background-heading {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 10px;
+  }
+  
+  .background-paragraph {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 5px;
+  }
+  
