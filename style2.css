@@ -6,7 +6,7 @@ body, html {
 
 body {
   position: relative;
-  background: url('your-background-image.jpg') repeat-x; /* Tile the image horizontally */
+  background: url('websitecollage.png') repeat-x; /* Tile the image horizontally */
   animation: scrollBackground 20s linear infinite;
 }
 
