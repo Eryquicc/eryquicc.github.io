@@ -4,13 +4,22 @@ body, html {
   overflow: hidden;
 }
 
-.background {
+.background-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
-  height: 50%;
-  background: url('websitecollage.png');
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure the background container is behind other content */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('your-background-image.jpg') repeat-x; /* Tile the image horizontally */
   animation: scrollBackground 20s linear infinite;
 }
 
