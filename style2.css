@@ -19,8 +19,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("websitecollage.png");
-  background-repeat: repeat;
+  background-image: url("websitecollage.png") repeat;
   animation: scrollBackground 20s linear infinite;
 }
 
