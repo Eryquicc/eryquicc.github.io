@@ -1,22 +1,11 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+.container {
+  overflow: hidden;
 }
 
-body {
-  position: relative;
-  background: url('websitecollage.png') repeat-x; /* Tile the image horizontally */
-  animation: scrollBackground 60s linear infinite;
-}
-
-@keyframes scrollBackground {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0; /* Move the background image fully to the right */
-  }
+.sliding-background {
+  background: url("websitecollage.png") repeat-x;
+  height: 1800px;
+  width: 4743px; /* The image width times 3 */
 }
 
 p,li,h1,h2,h3,h4,a,button {
