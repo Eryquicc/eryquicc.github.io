@@ -1,33 +1,21 @@
 body, html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-.background-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* Hide overflow content */
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 100%;
-  background: url("websitecollage.png") repeat; /* Tile the image horizontally */
+body {
+  position: relative;
+  background: url('your-background-image.jpg') repeat-x; /* Tile the image horizontally */
   animation: scrollBackground 20s linear infinite;
 }
 
 @keyframes scrollBackground {
   0% {
-    transform: translateX(0);
+    background-position: 0 0;
   }
   100% {
-    transform: translateX(-100%); /* Adjusted to move the background image */
+    background-position: 100% 0; /* Move the background image fully to the right */
   }
 }
 
