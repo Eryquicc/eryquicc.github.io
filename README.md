@@ -1,2 +1,4 @@
 # eryquicc.github.io
-Eryquicc's GitHub page
+
+## Eryquicc's GitHub page
+
