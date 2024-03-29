@@ -6,7 +6,7 @@
   background: url("websitecollage.png") repeat-x;
   height: 1800px;
   width: 14229px; /* The image width times 3 */
-  animation: slide 60s linear infinite;
+  animation: slide 100s linear infinite;
 }
 
 @keyframes slide {
