@@ -3,8 +3,8 @@
 }
 
 .sliding-background {
-  background: url("websitecollage.png") repeat-x;
-  height: 720px;
+  background: url("websitecollage.png") repeat-x: repeat-y;
+  height: 1800px;
   width: 14229px; /* The image width times 3 */
   animation: slide 120s linear infinite;
 }
@@ -14,7 +14,7 @@
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-4743px, -900px, 0); /* The image width */
+    transform: translate3d(-4743px, -1800px, 0); /* The image width */
   }
 }
 
