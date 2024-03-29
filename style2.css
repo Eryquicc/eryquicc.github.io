@@ -19,7 +19,8 @@ body {
 }
 .content {
   position: absolute;
-  padding: 5px;
+  top: 1%;
+  left: 0.5%;
 }
 * {
   color: white;
