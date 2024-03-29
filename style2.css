@@ -5,8 +5,8 @@
 .sliding-background {
   background: url("websitecollage.png") repeat-x;
   height: 720px;
-  width: 5691px; /* The image width times 3 */
-  animation: slide 15s linear infinite;
+  width: 7588px; /* The image width times 3 */
+  animation: slide 120s linear infinite;
   z-index: -1;
 }
 
