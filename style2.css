@@ -10,7 +10,7 @@
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-5691px, 0, 0); /* The image width */
+    transform: translate3d(-5691px, 0, 0); /* The image width times 4 decreased by original image width */
   }
 }
 
