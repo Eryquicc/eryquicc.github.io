@@ -1,13 +1,8 @@
-.container {
-  overflow: hidden;
-}
-
 .sliding-background {
-  background: url("websitecollage.png") repeat-x;
-  height: 720px;
+  background: url("websitecollage.png") repeat;
+  height: 7588px;
   width: 7588px; /* The image width times 3 */
   animation: slide 120s linear infinite;
-  z-index: -1;
 }
 
 @keyframes slide {
@@ -15,31 +10,10 @@
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-5691px, 0, 0); /* The image width */
+    transform: translate3d(-5691px, -5691px, 0); /* The image width */
   }
 }
 
-p,li,h1,h2,h3,h4,a,button {
-    color: white;
-    font-family: monospace;
-}
-
 body {
-    background-image: url("PrairieWind.png");
-    background-repeat: repeat;
-}
-/* Example for h1 heading with background */
-h1,h2 {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 1); /* Use an appropriate color for the background */
-    padding: 10px; /* Add some padding to create space between text and background */
-    margin: 0px;
-}
-  
-  /* Example for paragraphs (p) with background */
-p {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 1); /* Use an appropriate color for the background */
-    padding: 5px; /* Add some padding to create space between text and background */
-    margin: 0px;
+  overflow: hidden;
 }
