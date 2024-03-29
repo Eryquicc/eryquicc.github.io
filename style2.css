@@ -7,6 +7,7 @@
   height: 720px;
   width: 5691px; /* The image width times 3 */
   animation: slide 60s linear infinite;
+  z-index: -1;
 }
 
 @keyframes slide {
