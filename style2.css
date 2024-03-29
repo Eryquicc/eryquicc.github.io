@@ -2,11 +2,11 @@
   overflow: hidden;
 }
 
-body {
+.sliding-background {
   background: url("websitecollage.png") repeat-x;
   height: 720px;
   width: 5691px; /* The image width times 3 */
-  animation: slide 30s linear infinite;
+  animation: slide 15s linear infinite;
   z-index: -1;
 }
 
@@ -24,6 +24,9 @@ p,li,h1,h2,h3,h4,a,button {
     font-family: monospace;
 }
 
+body {
+    background-image: url("PrairieWind.png");
+    background-repeat: repeat;
 }
 /* Example for h1 heading with background */
 h1,h2 {
