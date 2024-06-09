@@ -3,7 +3,7 @@ p,li,h1,h2,h3,h4,a,button {
     font-family: monospace;
 }
 body {
-    background-image: url("blogs/PrairieWind.png");
+    background-image: url("PrairieWind.png");
     background-repeat: repeat;
 }
 /* Example for h1 heading with background */
