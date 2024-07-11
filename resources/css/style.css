@@ -271,24 +271,16 @@ header ion-icon {
   background-color: #24292e;
 }
 
-.x {
-  background-color: #000;
+.bluesky {
+  background-color: #1185fe;
 }
 
 .discord {
   background-color: #5865F2;
 }
 
-.mastodon {
-  background-color: #17063B;
-}
-
-.mastodon img {
-  width: 140px;
-}
-
-.mastodon-caption {
-  font-size: 0.7rem;
+.youtube {
+  background-color: #FF0000;
 }
 
 /*----------------------------------------------------
