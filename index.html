@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Welcome to My Website!</title>
+    <title>Eryquicc</title>
     <link rel="icon" href="./resources/img/pizza-pfp.webp" type="image/webp">
     <meta name="description" content="Carmelo Canavan's web profile and portfolio">
     <meta property="og:title" content="Carmelo Canavan">
@@ -19,15 +19,21 @@
   <body>
     <header>
         <div class="pizza-container slide-in-element">
-          <img class="slide-in-element" src="./resources/img/pizza-pfp.webp" alt="Carmelo Canavan's pfp">
+          <img class="slide-in-element" src="./resources/img/pizza-pfp.webp" alt="Eryquicc">
         </div>
-        <h1 id="big-typing">I'm Eryquicc, I like tech and photography.</h1>
+        <h1 id="big-typing">Welcome to My Website!</h1>
         <p id="typing-text"></p>
           <script>
             // Function to adjust content based on screen width
             function adjustContent() {
                 const screenWidth = window.innerWidth;
                 const contentDiv = document.getElementById('content');
+    
+                if (screenWidth < 768) {
+                    document.getElementById('typing-text').innerHTML = '<br>I\'m Eryquicc, I like tech and photography.';
+                } else {
+                    document.getElementById('typing-text').innerHTML = '<br>I\'m Eryquicc, I like tech and photography.';
+                }
             }
     
             adjustContent();
