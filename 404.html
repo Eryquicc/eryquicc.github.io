@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Eryquicc</title>
+    <link rel="icon" href="./resources/img/eryquicc.png" type="image/png">
+    <meta name="description" content="Eryquicc's web profile and portfolio">
+    <meta property="og:title" content="Eryquicc">
+    <meta property="og:description" content="A web profile and portfolio">
+    <meta property="og:image" content="./resources/img/eryquicc.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./vendors/css/grid.css">
+    <link rel="stylesheet" href="./vendors/css/normalize.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+  </head>
+  <body>
+    <header>
+        <div class="pizza-container slide-in-element">
+          <img class="slide-in-element" src="./resources/img/eryquicc.png" alt="Eryquicc">
+        </div>
+        <h1 id="big-typing">Error 404!</h1>
+        <p id="typing-text"></p>
+          <script>
+            // Function to adjust content based on screen width
+            function adjustContent() {
+                const screenWidth = window.innerWidth;
+                const contentDiv = document.getElementById('content');
+    
+                if (screenWidth < 768) {
+                    document.getElementById('typing-text').innerHTML = '<br>The page does not exist.';
+                } else {
+                    document.getElementById('typing-text').innerHTML = '<br>The page does not exist.';
+                }
+            }
+    
+            adjustContent();
+    
+            window.addEventListener('resize', adjustContent);
+          </script>
+    
+    </header>
+
+    <footer>
+      <p class="caption">Template by Ninja_5000, Modifications by Eryquicc.</p>
+    </footer>
+
+     <script src="./resources/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
