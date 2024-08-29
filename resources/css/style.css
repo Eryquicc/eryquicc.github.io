@@ -216,17 +216,11 @@ header ion-icon {
 
 .badges {
   text-align: center;
-  margin-top: 20px; /* Adjust this value to increase/decrease space */
-  display: flex;
-  justify-content: center; /* Center the badges */
 }
 
 .badges img {
   margin: 1vh 5vh 1vh 0vh;
   transform: scale(1.1);
-  margin-right: 10px; /* Space between badges */
-  width: 80px; /* Adjust size if needed */
-  height: auto;
 }
 
 .badges:last-child {
