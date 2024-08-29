@@ -23,7 +23,7 @@
         </div>
         <h1 id="big-typing">Welcome to My Website!</h1>
         <p id="typing-text"></p>
-        <script>
+          <script>
             // Function to adjust content based on screen width
             function adjustContent() {
                 const screenWidth = window.innerWidth;
@@ -39,16 +39,8 @@
             adjustContent();
     
             window.addEventListener('resize', adjustContent);
-        </script>
-
-        <!-- Move the status badges here -->
-        <div class="fade-in row badges">
-            <img src="https://api.statusbadges.me/badge/status/629939924589608961" alt="status">
-            <img src="https://api.statusbadges.me/badge/playing/629939924589608961" alt="playing">
-            <img src="https://api.statusbadges.me/badge/vscode/629939924589608961" alt="vscode">
-            <a href="https://api.statusbadges.me/openspotify/629939924589608961" target="_blank" rel="noopener"><img src="https://api.statusbadges.me/badge/spotify/629939924589608961" alt="spotify"></a>
-        </div>
-
+          </script>
+    
         <div class="arrow-wrapper slide-in-element" onclick="document.querySelector('.socials').scrollIntoView({ behavior: 'smooth' });">
           <ion-icon name="chevron-down"></ion-icon>
         </div>
@@ -57,6 +49,12 @@
     <section class="socials box">
       <div class="fade-in row">
         <h2 class="fade-in">Socials</h2>
+      </div>
+      <div class="fade-in row badges">
+        <img src="https://api.statusbadges.me/badge/status/629939924589608961" alt="status">
+        <img src="https://api.statusbadges.me/badge/playing/629939924589608961" alt="playing">
+        <img src="https://api.statusbadges.me/badge/vscode/629939924589608961" alt="vscode">
+        <a href="https://api.statusbadges.me/openspotify/629939924589608961" target="_blank" rel="noopener"><img src="https://api.statusbadges.me/badge/spotify/629939924589608961" alt="spotify"></a>
       </div>
       <div class="fade-in row">
         <a href="https://discord.gg/8Rk2qVPGb5" target="_blank" class="fade-in col span-1-of-4 social-panel discord">
