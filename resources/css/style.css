@@ -10,7 +10,7 @@
 }
 
 html {
-  background-img: "./resources/img/PrairieWind.png";
+  background-image: "./resources/img/PrairieWind.png";
   color: #fdfdfdcc;
   font-family: "Montserrat", "Roboto", sans-serif;
   font-weight: 300;
