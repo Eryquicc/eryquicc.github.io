@@ -16,9 +16,6 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
-  background-size: cover; /* This ensures the background image covers the entire viewport */
-  background-position: center; /* This centers the background image */
-  background-repeat: no-repeat; /* This prevents the image from repeating */
 }
 
 /* .clearfix {zoom: 1} */
