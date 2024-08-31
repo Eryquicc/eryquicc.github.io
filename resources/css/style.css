@@ -10,12 +10,15 @@
 }
 
 html {
-  background-image: "./resources/img/PrairieWind.png";
+  background-image: url("./resources/img/PrairieWind.png");
   color: #fdfdfdcc;
   font-family: "Montserrat", "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  background-size: cover; /* This ensures the background image covers the entire viewport */
+  background-position: center; /* This centers the background image */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
 }
 
 /* .clearfix {zoom: 1} */
