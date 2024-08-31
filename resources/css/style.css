@@ -16,6 +16,9 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  background-size: auto; /* Default, allows the image to repeat naturally */
+  background-position: top left; /* Position the image at the top left */
+  background-repeat: repeat; /* This makes the image repeat in both directions */
 }
 
 /* .clearfix {zoom: 1} */
