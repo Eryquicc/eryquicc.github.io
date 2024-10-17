@@ -348,8 +348,7 @@ footer {
 
 footer .caption {
   color: #fff;
-  padding-left: 38.5%;
-  padding-bottom: 1.5%;
+  text-align: center;
 }
 
 /*----------------------------------------------------
@@ -358,7 +357,7 @@ footer .caption {
 
 @media only screen and (max-width: 768px) {
   header::before {
-    content: "Please note that this page isn't fully responsive on this screen yet.";
+    content: "Uh oh! Looks like your display isn't fully supported here.";
     font-weight: 400;
     position: absolute;
     background-color: #fecdac;
@@ -435,9 +434,5 @@ footer .caption {
 
   .span-1-of-3, .span-1-of-2, .span-1-of-4 {
     width: 95%;
-  }
-
-  footer .caption {
-    padding-left: 0%;
   }
 }
