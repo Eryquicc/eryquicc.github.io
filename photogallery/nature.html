@@ -24,21 +24,32 @@
         <h1 id="big-typing">Photos of nature.</h1>
         <p id="typing-text"></p>
           <script>
-            // Function to adjust content based on screen width
-            function adjustContent() {
-                const screenWidth = window.innerWidth;
-                const contentDiv = document.getElementById('content');
-    
-                if (screenWidth < 768) {
-                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under CC BY-ND.';
-                } else {
-                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under CC BY-ND.';
-                }
-            }
-    
-            adjustContent();
-    
-            window.addEventListener('resize', adjustContent);
+              document.addEventListener('DOMContentLoaded', function () {
+                  function typeText(text, elementId, speed, callback) {
+                      let i = 0;
+                      const element = document.getElementById(elementId);
+          
+                      function typeChar() {
+                          if (i < text.length) {
+                              element.innerHTML += text.charAt(i);
+                              i++;
+                              setTimeout(typeChar, speed); // Adjust typing speed here
+                          } else if (callback) {
+                              callback(); // Call callback when typing is finished
+                          }
+                      }
+          
+                      typeChar();
+                  }
+          
+                  function showLink() {
+                      const typingTextDiv = document.getElementById('typing-text');
+                      typingTextDiv.innerHTML += '<br>These photos are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/deed" target="_blank">CC BY-ND</a>.';
+                  }
+          
+                  // Start typing animation, then show the link after it's finished
+                  typeText("These photos are licensed under", "typing-text", 100, showLink); // Adjust typing speed if needed
+              });
           </script>
     
         <div class="arrow-wrapper slide-in-element" onclick="document.querySelector('.cat').scrollIntoView({ behavior: 'smooth' });">
