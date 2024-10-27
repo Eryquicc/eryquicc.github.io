@@ -24,27 +24,21 @@
         <h1 id="big-typing">Photos of nature.</h1>
         <p id="typing-text"></p>
           <script>
-              const licenseUrl = "https://creativecommons.org/licenses/by-nd/4.0/";
-              const fullText = `These photos are licensed under <a href="${licenseUrl}" target="_blank" rel="noopener noreferrer">CC BY-ND</a>.`;
-          
-              function typeText(text, element) {
-                  let index = 0;
-          
-                  function typeNextCharacter() {
-                      if (index < text.length) {
-                          element.innerHTML += text[index];
-                          index++;
-                          setTimeout(typeNextCharacter, 100); // Adjust the typing speed here (100ms per character)
-                      }
-                  }
-          
-                  typeNextCharacter();
-              }
-          
-              document.addEventListener('DOMContentLoaded', () => {
-                  const typingTextElement = document.getElementById('typing-text');
-                  typeText(fullText, typingTextElement);
-              });
+            // Function to adjust content based on screen width
+            function adjustContent() {
+                const screenWidth = window.innerWidth;
+                const contentDiv = document.getElementById('content');
+    
+                if (screenWidth < 768) {
+                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">CC BY-ND</a>.';
+                } else {
+                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">CC BY-ND</a>.';
+                }
+            }
+    
+            adjustContent();
+    
+            window.addEventListener('resize', adjustContent);
           </script>
     
         <div class="arrow-wrapper slide-in-element" onclick="document.querySelector('.cat').scrollIntoView({ behavior: 'smooth' });">
