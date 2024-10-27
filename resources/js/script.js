@@ -16,10 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // Check for anchor tags and append them immediately
+            // Check for anchor tags
             if (text.substring(index, index + 3) === '<a ') {
-                const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include closing tag
-                document.getElementById('big-typing').innerHTML += text.substring(index, endTagIndex);
+                const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include the closing </a> tag
+                const anchorText = text.substring(index, endTagIndex);
+                document.getElementById('big-typing').innerHTML += anchorText;
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else {
                 document.getElementById('big-typing').innerHTML += text.charAt(index);
@@ -38,13 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
-            // Check for anchor tags and append them immediately
+            // Check for anchor tags
             if (typeText.substring(index, index + 3) === '<a ') {
-                const endTagIndex = typeText.indexOf('</a>', index) + 4; // +4 to include closing tag
-                document.getElementById('typing-text').innerHTML += typeText.substring(index, endTagIndex);
+                const endTagIndex = typeText.indexOf('</a>', index) + 4; // +4 to include the closing </a> tag
+                const anchorText = typeText.substring(index, endTagIndex);
+                document.getElementById('typing-text').innerHTML += anchorText;
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else if (typeText.charAt(index) === '<') {
-                // If you want to handle other HTML tags here
+                // If handling line breaks or other tags, this will need customization
                 index += 3; // Skip to the end of the HTML tag (assuming it's <br>)
                 document.getElementById('typing-text').innerHTML += "<br>";
             } else {
