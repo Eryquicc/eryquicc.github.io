@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             
             // Check for anchor tags and append them immediately
-            if (text.substring(index, index + 3) === '<a ') {
+            if (text.substring(index, index + 4) === '<a ') {
                 const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include closing tag
                 document.getElementById('big-typing').innerHTML += text.substring(index, endTagIndex);
                 index = endTagIndex; // Move index to the end of the anchor tag
