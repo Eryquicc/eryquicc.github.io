@@ -351,7 +351,7 @@ footer .caption {
     padding-bottom: 50px;
   }
 
-  .socials {
+  .cat {
     height: 70vh;
   }
 
@@ -363,14 +363,14 @@ footer .caption {
     height: 55vh;
   }
 
-  .social-panel {
+  .cat-panel {
     margin: 0;
     margin-top: 30px;
     margin-left: 10px;
     padding-bottom: 50px;
   }
 
-  .social-panel:first-child {
+  .cat-panel:first-child {
     margin-left: 10px;
   }
 
