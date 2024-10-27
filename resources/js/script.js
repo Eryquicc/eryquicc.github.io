@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else if (typeText.charAt(index) === '<') {
                 index += 3; // Skip to the end of the HTML tag (assuming it's <br>)
-                document.getElementById('typing-text').innerHTML += "<br>";
+                document.getElementById('typing-text').innerHTML += ".";
             } else {
                 document.getElementById('typing-text').innerHTML += typeText.charAt(index);
             }
