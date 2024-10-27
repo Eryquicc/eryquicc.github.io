@@ -19,7 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
             // Check for anchor tags and append them immediately
             if (text.substring(index, index + 3) === '<a ') {
                 const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include closing tag
-                document.getElementById('big-typing').innerHTML += text.substring(index, endTagIndex);
+                // Remove the last ">" character if it is appended
+                let anchorTag = text.substring(index, endTagIndex);
+                if (anchorTag.endsWith('>')) {
+                    anchorTag = anchorTag.slice(0, -1); // Remove the last ">"
+                }
+                document.getElementById('big-typing').innerHTML += anchorTag;
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else {
                 document.getElementById('big-typing').innerHTML += text.charAt(index);
@@ -41,7 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
             // Check for anchor tags and append them immediately
             if (typeText.substring(index, index + 3) === '<a ') {
                 const endTagIndex = typeText.indexOf('</a>', index) + 4; // +4 to include closing tag
-                document.getElementById('typing-text').innerHTML += typeText.substring(index, endTagIndex);
+                // Remove the last ">" character if it is appended
+                let anchorTag = typeText.substring(index, endTagIndex);
+                if (anchorTag.endsWith('>')) {
+                    anchorTag = anchorTag.slice(0, -1); // Remove the last ">"
+                }
+                document.getElementById('typing-text').innerHTML += anchorTag;
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else if (typeText.charAt(index) === '<') {
                 // This part can be modified if you want to handle other HTML tags
