@@ -15,16 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 setTimeout(typingAnimation, 0);
                 return;
             }
-
+            
             // Check for anchor tags and append them immediately
             if (text.substring(index, index + 3) === '<a ') {
                 const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include closing tag
-                // Remove the last ">" character if it is appended
-                let anchorTag = text.substring(index, endTagIndex);
-                if (anchorTag.endsWith('>')) {
-                    anchorTag = anchorTag.slice(0, -1); // Remove the last ">"
-                }
-                document.getElementById('big-typing').innerHTML += anchorTag;
+                document.getElementById('big-typing').innerHTML += text.substring(index, endTagIndex);
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else {
                 document.getElementById('big-typing').innerHTML += text.charAt(index);
@@ -42,24 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 clearInterval(interval);
                 return;
             }
-
+            
             // Check for anchor tags and append them immediately
             if (typeText.substring(index, index + 3) === '<a ') {
                 const endTagIndex = typeText.indexOf('</a>', index) + 4; // +4 to include closing tag
-                // Remove the last ">" character if it is appended
-                let anchorTag = typeText.substring(index, endTagIndex);
-                if (anchorTag.endsWith('>')) {
-                    anchorTag = anchorTag.slice(0, -1); // Remove the last ">"
-                }
-                document.getElementById('typing-text').innerHTML += anchorTag;
+                document.getElementById('typing-text').innerHTML += typeText.substring(index, endTagIndex);
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else if (typeText.charAt(index) === '<') {
-                // This part can be modified if you want to handle other HTML tags
                 index += 3; // Skip to the end of the HTML tag (assuming it's <br>)
                 document.getElementById('typing-text').innerHTML += "<br>";
             } else {
                 document.getElementById('typing-text').innerHTML += typeText.charAt(index);
-                index++; // Only increment if not dealing with an anchor or line break
+                index++; // Increment index here, outside of the condition
             }
 
             // Trigger animation or transition for slide-in elements
