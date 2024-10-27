@@ -27,7 +27,6 @@
               // Function to adjust content based on screen width
               function adjustContent() {
                   const screenWidth = window.innerWidth;
-                  const contentDiv = document.getElementById('content');
                   
                   // License URL
                   const licenseUrl = "https://creativecommons.org/licenses/by-nd/4.0/";
@@ -39,9 +38,11 @@
                   document.getElementById('typing-text').innerHTML = textContent;
               }
           
-              adjustContent();
-          
-              window.addEventListener('resize', adjustContent);
+              // Wait for the DOM to be fully loaded
+              document.addEventListener('DOMContentLoaded', (event) => {
+                  adjustContent(); // Initial call
+                  window.addEventListener('resize', adjustContent); // Call on resize
+              });
           </script>
     
         <div class="arrow-wrapper slide-in-element" onclick="document.querySelector('.cat').scrollIntoView({ behavior: 'smooth' });">
