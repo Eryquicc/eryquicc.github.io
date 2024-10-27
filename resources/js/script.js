@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             
             // Check for anchor tags and append them immediately
-            if (text.substring(index, index + 4) === '<a ') {
+            if (text.substring(index, index + 3) === '<a ') {
                 const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include closing tag
                 document.getElementById('big-typing').innerHTML += text.substring(index, endTagIndex);
                 index = endTagIndex; // Move index to the end of the anchor tag
@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById('typing-text').innerHTML += "<br>";
             } else {
                 document.getElementById('typing-text').innerHTML += typeText.charAt(index);
-                index++; // Increment index here, outside of the condition
             }
+            index++;
 
             // Trigger animation or transition for slide-in elements
             document.querySelectorAll('.slide-in-element').forEach((element) => {
