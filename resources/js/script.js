@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // Check for anchor tags and append them immediately
-            if (text.substring(index, index + 2) === '<a ') {
-                const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include closing tag
+            if (text.substring(index, index + 3) === '<a ') {
+                const endTagIndex = text.indexOf('</a>', index) + 5; // +4 to include closing tag
                 document.getElementById('big-typing').innerHTML += text.substring(index, endTagIndex);
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else {
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // Check for anchor tags and append them immediately
-            if (typeText.substring(index, index + 2) === '<a ') {
-                const endTagIndex = typeText.indexOf('</a>', index) + 4; // +4 to include closing tag
+            if (typeText.substring(index, index + 3) === '<a ') {
+                const endTagIndex = typeText.indexOf('</a>', index) + 5; // +4 to include closing tag
                 document.getElementById('typing-text').innerHTML += typeText.substring(index, endTagIndex);
                 index = endTagIndex; // Move index to the end of the anchor tag
             } else if (typeText.charAt(index) === '<') {
