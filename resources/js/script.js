@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // Check for anchor tags
-            if (text.substring(index, index + 3) === '<a ') {
+            if (text.substring(index, index + 74) === '<a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">') {
                 const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include the closing </a> tag
                 const anchorText = text.substring(index, endTagIndex);
                 document.getElementById('big-typing').innerHTML += anchorText;
