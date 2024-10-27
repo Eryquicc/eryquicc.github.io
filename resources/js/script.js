@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else if (typeText.charAt(index) === '<') {
                 // This part can be modified if you want to handle other HTML tags
                 index += 4; // Skip to the end of the HTML tag (assuming it's <br>)
-                document.getElementById('typing-text').innerHTML += "";
+                document.getElementById('typing-text').innerHTML += "<br>";
             } else {
                 document.getElementById('typing-text').innerHTML += typeText.charAt(index);
                 index++; // Only increment if not dealing with an anchor or line break
