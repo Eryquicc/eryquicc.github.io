@@ -23,23 +23,24 @@
         </div>
         <h1 id="big-typing">Photos of nature.</h1>
         <p id="typing-text"></p>
-          <script>
-            // Function to adjust content based on screen width
-            function adjustContent() {
-                const screenWidth = window.innerWidth;
-                const contentDiv = document.getElementById('content');
-    
-                if (screenWidth < 768) {
-                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/deed" target="_blank">CC BY-ND</a>.';
-                } else {
-                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/deed" target="_blank">CC BY-ND</a>.';
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                function adjustContent() {
+                    const screenWidth = window.innerWidth;
+                    const contentDiv = document.getElementById('content');
+        
+                    if (screenWidth < 768) {
+                        document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/deed" target="_blank">CC BY-ND</a>.';
+                    } else {
+                        document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/deed" target="_blank">CC BY-ND</a>.';
+                    }
                 }
-            }
-    
-            adjustContent();
-    
-            window.addEventListener('resize', adjustContent);
-          </script>
+        
+                adjustContent();
+        
+                window.addEventListener('resize', adjustContent);
+            });
+        </script>
     
         <div class="arrow-wrapper slide-in-element" onclick="document.querySelector('.cat').scrollIntoView({ behavior: 'smooth' });">
           <ion-icon name="chevron-down"></ion-icon>
