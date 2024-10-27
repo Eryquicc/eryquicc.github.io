@@ -27,9 +27,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 clearInterval(interval);
                 return;
             }
-            if (typeText.charAt(index) === '<') {
-                index += 3;
-                document.getElementById('typing-text').innerHTML += "<br>"
+            // Check if the current character starts a link
+            if (typeText.charAt(index) === '<' && typeText.substring(index).startsWith('<a')) {
+                // Find the end of the anchor tag
+                const endIndex = typeText.indexOf('>', index) + 1;
+                if (endIndex > 0) {
+                    // Skip the entire anchor tag
+                    document.getElementById('typing-text').innerHTML += typeText.substring(index, endIndex);
+                    index = endIndex; // Move index to the end of the anchor tag
+                }
+            } else if (typeText.charAt(index) === '<') {
+                index += 3; // If it's a tag but not a link, handle it normally
+                document.getElementById('typing-text').innerHTML += "<br>";
             } else {
                 document.getElementById('typing-text').innerHTML += typeText.charAt(index);
             }
@@ -37,11 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
             // Trigger animation or transition for slide-in elements
             document.querySelectorAll('.slide-in-element').forEach((element) => {
                 element.classList.add('slide-in');
-      });
+            });
         }, 15);
     }
-    bigTypingAnimation();
 
+    bigTypingAnimation();
 
     function fadeInCheck() {
         var fadeInElements = document.querySelectorAll('.fade-in');
