@@ -30,9 +30,11 @@
                 const contentDiv = document.getElementById('content');
     
                 if (screenWidth < 768) {
-                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under <a href=\"https://creativecommons.org/licenses/by-nd/4.0/deed\" target="_blank">CC BY-ND</a>.';
+                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under ';
+                    document.write('CC BY-ND.'.link('https://creativecommons.org/licenses/by-nd/4.0/deed'));
                 } else {
-                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under <a href=\"https://creativecommons.org/licenses/by-nd/4.0/deed\" target="_blank">CC BY-ND</a>.';
+                    document.getElementById('typing-text').innerHTML = '<br>These photos are licensed under ';
+                    document.write('CC BY-ND.'.link('https://creativecommons.org/licenses/by-nd/4.0/deed'));
                 }
             }
     
