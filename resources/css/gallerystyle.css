@@ -30,6 +30,26 @@ html {
   visibility: hidden; */
 }
 
+/* Link color when it has not been visited */
+a {
+    color: #FFFFFF; /* Change this to your desired color */
+}
+
+/* Link color when it has been visited */
+a:visited {
+    color: #FFFFFF; /* Change this to your desired color */
+}
+
+/* Link color when hovered over */
+a:hover {
+    color: #FFFFFF; /* Change this to your desired color */
+}
+
+/* Link color when it is active (clicked) */
+a:active {
+    color: #FFFFFF; /* Change this to your desired color */
+}
+
 /*-----------------------------------------------------
 -----------------REUSABLE COMPONENETS------------------
 -------------------------------------------------------*/
