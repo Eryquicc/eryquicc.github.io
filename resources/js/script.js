@@ -7,42 +7,50 @@ document.addEventListener("DOMContentLoaded", () => {
         let text = document.getElementById('big-typing').innerHTML;
         document.getElementById('big-typing').innerHTML = "";
         let index = 0;
-        const bigInterval = setInterval(function(){
-            if(index === text.length){
+
+        const bigInterval = setInterval(function() {
+            if (index === text.length) {
                 clearInterval(bigInterval);
                 document.getElementById('big-typing').classList.add("noanimation");
                 setTimeout(typingAnimation, 0);
                 return;
             }
-            document.getElementById('big-typing').innerHTML += text.charAt(index);
-            index++;
+            
+            // Check for anchor tags and append them immediately
+            if (text.substring(index, index + 3) === '<a ') {
+                const endTagIndex = text.indexOf('</a>', index) + 4; // +4 to include closing tag
+                document.getElementById('big-typing').innerHTML += text.substring(index, endTagIndex);
+                index = endTagIndex; // Move index to the end of the anchor tag
+            } else {
+                document.getElementById('big-typing').innerHTML += text.charAt(index);
+                index++;
+            }
         }, 20);
     }
 
     function typingAnimation() {
         document.getElementById('typing-text').classList.remove("noanimation");
         let index = 0;
-        const interval = setInterval(function(){
-            if(index === typeText.length){
+
+        const interval = setInterval(function() {
+            if (index === typeText.length) {
                 clearInterval(interval);
                 return;
             }
-            // Check if the current character starts a link
-            if (typeText.charAt(index) === '<' && typeText.substring(index).startsWith('<a')) {
-                // Find the end of the anchor tag
-                const endIndex = typeText.indexOf('>', index) + 1;
-                if (endIndex > 0) {
-                    // Skip the entire anchor tag
-                    document.getElementById('typing-text').innerHTML += typeText.substring(index, endIndex);
-                    index = endIndex; // Move index to the end of the anchor tag
-                }
+            
+            // Check for anchor tags and append them immediately
+            if (typeText.substring(index, index + 3) === '<a ') {
+                const endTagIndex = typeText.indexOf('</a>', index) + 4; // +4 to include closing tag
+                document.getElementById('typing-text').innerHTML += typeText.substring(index, endTagIndex);
+                index = endTagIndex; // Move index to the end of the anchor tag
             } else if (typeText.charAt(index) === '<') {
-                index += 3; // If it's a tag but not a link, handle it normally
+                index += 3; // Skip to the end of the HTML tag (assuming it's <br>)
                 document.getElementById('typing-text').innerHTML += "<br>";
             } else {
                 document.getElementById('typing-text').innerHTML += typeText.charAt(index);
             }
             index++;
+
             // Trigger animation or transition for slide-in elements
             document.querySelectorAll('.slide-in-element').forEach((element) => {
                 element.classList.add('slide-in');
