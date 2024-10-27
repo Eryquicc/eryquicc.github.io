@@ -24,24 +24,26 @@
         <h1 id="big-typing">Photos of nature.</h1>
         <p id="typing-text"></p>
           <script>
-              // Function to adjust content based on screen width
-              function adjustContent() {
-                  const screenWidth = window.innerWidth;
-                  
-                  // License URL
-                  const licenseUrl = "https://creativecommons.org/licenses/by-nd/4.0/";
+              const licenseUrl = "https://creativecommons.org/licenses/by-nd/4.0/";
+              const fullText = `These photos are licensed under <a href="${licenseUrl}" target="_blank" rel="noopener noreferrer">CC BY-ND</a>.`;
           
-                  // HTML content with a hyperlink
-                  const textContent = `<br>These photos are licensed under <a href="${licenseUrl}" target="_blank" rel="noopener noreferrer">CC BY-ND</a>.`;
+              function typeText(text, element) {
+                  let index = 0;
           
-                  // Adjusting the innerHTML based on screen width
-                  document.getElementById('typing-text').innerHTML = textContent;
+                  function typeNextCharacter() {
+                      if (index < text.length) {
+                          element.innerHTML += text[index];
+                          index++;
+                          setTimeout(typeNextCharacter, 100); // Adjust the typing speed here (100ms per character)
+                      }
+                  }
+          
+                  typeNextCharacter();
               }
           
-              // Wait for the DOM to be fully loaded
-              document.addEventListener('DOMContentLoaded', (event) => {
-                  adjustContent(); // Initial call
-                  window.addEventListener('resize', adjustContent); // Call on resize
+              document.addEventListener('DOMContentLoaded', () => {
+                  const typingTextElement = document.getElementById('typing-text');
+                  typeText(fullText, typingTextElement);
               });
           </script>
     
