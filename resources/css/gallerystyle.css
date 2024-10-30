@@ -298,6 +298,14 @@ header ion-icon {
   background-color: #005c7a;
 }
 
+.animals {
+  background-color: #d6a100;
+}
+
+.structures {
+  background-color: #404040;
+}
+
 .photos {
   background-color: #000000;
 }
