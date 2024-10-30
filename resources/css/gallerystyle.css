@@ -277,18 +277,12 @@ header ion-icon {
 }
 
 .cat-panel img,
-.cat-panel img-pot,
 .cat-panel ion-icon {
   margin-right: 0px;
 }
 
 .cat-panel img {
   width: 400px;
-  height: 300px;
-}
-
-.cat-panel img-pot {
-  width: 225px;
   height: 300px;
 }
 
@@ -316,6 +310,11 @@ header ion-icon {
   background-color: #131314ba;
   height: 70vh;
   /* padding-bottom: 20vh; */
+}
+
+.friends-panel img {
+  width: 225px;
+  height: 300px;
 }
 
 /*----------------------------------------------------
