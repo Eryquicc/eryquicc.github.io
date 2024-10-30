@@ -234,6 +234,11 @@ header ion-icon {
 
 .cat {
   background-color: #1c1c1c96;
+  height: 47vh;
+}
+
+.photosection {
+  background-color: #1c1c1c96;
   height: 70vh;
 }
 
