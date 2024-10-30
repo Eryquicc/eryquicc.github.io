@@ -282,8 +282,8 @@ header ion-icon {
 }
 
 .cat-panel img {
-  width: 40px;
-  height: 40px;
+  width: 400px;
+  height: 300px;
 }
 
 .cat-panel ion-icon {
@@ -300,6 +300,16 @@ header ion-icon {
 
 .photos {
   background-color: #000000;
+}
+
+/*----------------------------------------------------
+-----------------FRIENDS (REPURPOSED)-----------------
+------------------------------------------------------*/
+
+.friends {
+  background-color: #131314ba;
+  height: 47vh;
+  /* padding-bottom: 20vh; */
 }
 
 /*----------------------------------------------------
