@@ -277,11 +277,17 @@ header ion-icon {
 }
 
 .cat-panel img,
+.cat-panel img-pot,
 .cat-panel ion-icon {
   margin-right: 0px;
 }
 
 .cat-panel img {
+  width: 400px;
+  height: 300px;
+}
+
+.cat-panel img-pot {
   width: 400px;
   height: 300px;
 }
