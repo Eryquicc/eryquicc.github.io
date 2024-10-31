@@ -381,8 +381,8 @@ footer .caption {
     content: "Uh oh! Looks like your display isn't fully supported here.";
     font-weight: 400;
     position: absolute;
-    background-color: #fecdac;
-    color: #000;
+    background-color: #000000;
+    color: #ffffff;
     height: 50px;
   }
 
