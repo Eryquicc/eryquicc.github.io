@@ -59,7 +59,7 @@ a:active {
 }
 
 .row {
-  max-width: 1140px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -239,7 +239,7 @@ header ion-icon {
 
 .animals-land {
   background-color: #1c1c1c96;
-  height: 250vh;
+  height: 420vh;
 }
 
 .nature-land {
@@ -336,7 +336,7 @@ header ion-icon {
 
 .animals-pot {
   background-color: #131314ba;
-  height: 70vh;
+  height: 60vh;
   /* padding-bottom: 20vh; */
 }
 
@@ -382,8 +382,8 @@ footer .caption {
     content: "Uh oh! Looks like your display isn't fully supported here.";
     font-weight: 400;
     position: absolute;
-    background-color: #fecdac;
-    color: #000;
+    background-color: #000000;
+    color: #ffffff;
     height: 50px;
   }
 
