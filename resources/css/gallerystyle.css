@@ -237,7 +237,22 @@ header ion-icon {
   height: 47vh;
 }
 
-.photosection {
+.animals {
+  background-color: #1c1c1c96;
+  height: 70vh;
+}
+
+.nature {
+  background-color: #1c1c1c96;
+  height: 70vh;
+}
+
+.structures {
+  background-color: #1c1c1c96;
+  height: 70vh;
+}
+
+.vehicles {
   background-color: #1c1c1c96;
   height: 70vh;
 }
@@ -316,10 +331,28 @@ header ion-icon {
 }
 
 /*----------------------------------------------------
------------------FRIENDS (REPURPOSED)-----------------
+--------------------POTRAIT PHOTOS--------------------
 ------------------------------------------------------*/
 
-.friends {
+.animals {
+  background-color: #131314ba;
+  height: 70vh;
+  /* padding-bottom: 20vh; */
+}
+
+.nature {
+  background-color: #131314ba;
+  height: 70vh;
+  /* padding-bottom: 20vh; */
+}
+
+.structures {
+  background-color: #131314ba;
+  height: 70vh;
+  /* padding-bottom: 20vh; */
+}
+
+.vehicles {
   background-color: #131314ba;
   height: 70vh;
   /* padding-bottom: 20vh; */
