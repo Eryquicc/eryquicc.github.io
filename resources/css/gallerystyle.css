@@ -334,25 +334,25 @@ header ion-icon {
 --------------------POTRAIT PHOTOS--------------------
 ------------------------------------------------------*/
 
-.animals {
+.animals-pot {
   background-color: #131314ba;
   height: 70vh;
   /* padding-bottom: 20vh; */
 }
 
-.nature {
+.nature-pot {
   background-color: #131314ba;
   height: 70vh;
   /* padding-bottom: 20vh; */
 }
 
-.structures {
+.structures-pot {
   background-color: #131314ba;
   height: 70vh;
   /* padding-bottom: 20vh; */
 }
 
-.vehicles {
+.vehicles-pot {
   background-color: #131314ba;
   height: 70vh;
   /* padding-bottom: 20vh; */
