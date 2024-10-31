@@ -59,7 +59,7 @@ a:active {
 }
 
 .row {
-  max-width: 1000px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -446,10 +446,12 @@ footer .caption {
   .cat-panel {
     margin: 0;
     margin-top: 30px;
+    margin-left: 10px;
     padding-bottom: 50px;
   }
 
   .cat-panel:first-child {
+    margin-left: 10px;
   }
 
   .span-1-of-3, .span-1-of-2, .span-1-of-4 {
