@@ -237,22 +237,22 @@ header ion-icon {
   height: 47vh;
 }
 
-.animals {
+.animals-land {
+  background-color: #1c1c1c96;
+  height: 250vh;
+}
+
+.nature-land {
   background-color: #1c1c1c96;
   height: 70vh;
 }
 
-.nature {
+.structures-land {
   background-color: #1c1c1c96;
   height: 70vh;
 }
 
-.structures {
-  background-color: #1c1c1c96;
-  height: 70vh;
-}
-
-.vehicles {
+.vehicles-land {
   background-color: #1c1c1c96;
   height: 70vh;
 }
