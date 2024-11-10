@@ -249,7 +249,7 @@ header ion-icon {
 
 .structures-land {
   background-color: #1c1c1c96;
-  height: 70vh;
+  height: 250vh;
 }
 
 .vehicles-land {
@@ -348,7 +348,7 @@ header ion-icon {
 
 .structures-pot {
   background-color: #131314ba;
-  height: 70vh;
+  height: 115vh;
   /* padding-bottom: 20vh; */
 }
 
