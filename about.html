@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Eryquicc</title>
+    <link rel="icon" href="./resources/img/eryquicc.png" type="image/png">
+    <meta name="description" content="Eryquicc's profile">
+    <meta property="og:title" content="Eryquicc">
+    <meta property="og:description" content="Welcome to my small website!">
+    <meta property="og:image" content="./resources/img/eryquicc.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./vendors/css/grid.css">
+    <link rel="stylesheet" href="./vendors/css/normalize.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+  </head>
+  <body>
+    <header>
+        <div class="pizza-container slide-in-element">
+          <img class="slide-in-element" src="./resources/img/about.png" alt="About">
+        </div>
+        <h1 id="big-typing">About Page!</h1>
+        <p id="typing-text"></p>
+          <script>
+            // Function to adjust content based on screen width
+            function adjustContent() {
+                const screenWidth = window.innerWidth;
+                const contentDiv = document.getElementById('content');
+    
+                if (screenWidth < 768) {
+                    document.getElementById('typing-text').innerHTML = '<br>Know more about me and my website.';
+                } else {
+                    document.getElementById('typing-text').innerHTML = '<br>Know more about me and my website.';
+                }
+            }
+    
+            adjustContent();
+    
+            window.addEventListener('resize', adjustContent);
+          </script>
+    
+        <div class="arrow-wrapper slide-in-element" onclick="document.querySelector('.cat').scrollIntoView({ behavior: 'smooth' });">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+    </header>
+    
+    <section class="socials box">
+      <div class="fade-in row">
+        <h2 class="fade-in">About Me</h2>
+      </div>
+      <div class="fade-in row">
+        <p>Hey there! My name is Eryquicc, sometimes called Quicc, or just Ery. I'm from East Java, Indonesia, and I like tech and cameras a lot, I like making and playing games, taking photos, and shooting videos. The origin of the name "Eryquicc" is actually half-inspired by a Top Gear meme, where Hammond tastes the concoction made from the V8 blender, with the caption "ery nice" on top. You can see where it's going!</p>
+      </div>
+    </section>
+
+    <section class="friends box">
+      <div class="fade-in row">
+        <h2 class="fade-in">About This Website</h2>
+      </div>
+      <div class="fade-in row">
+        <p>I started creating this website to improve my skills in HTML and CSS and to begin learning JavaScript. The design of this site is inspired by ninja_5000’s, with my own features and fixes added over time. And that's where we are right now!</p>
+      </div>
+    </section>
+    
+    <footer>
+      <p class="caption">© 2024 Eryquicc.</p>
+    </footer>
+
+     <script src="./resources/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
