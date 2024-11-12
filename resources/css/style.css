@@ -310,6 +310,11 @@ header ion-icon {
   background-color: #000000;
 }
 
+.about-me {
+  background-color: #1c1c1c96;
+  height: 48vh;
+}
+
 /*----------------------------------------------------
 ------------------------FRIENDS-----------------------
 ------------------------------------------------------*/
@@ -338,6 +343,11 @@ header ion-icon {
 
 .cupglass {
   background-color: #FFA500;
+}
+
+.about-web {
+  background-color: #131314ba;
+  height: 38vh;
 }
 
 /*----------------------------------------------------
