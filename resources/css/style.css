@@ -294,10 +294,6 @@ header ion-icon {
   background-color: #24292e;
 }
 
-.bluesky {
-  background-color: #1185fe;
-}
-
 .discord {
   background-color: #5865F2;
 }
@@ -306,8 +302,8 @@ header ion-icon {
   background-color: #FF0000;
 }
 
-.twitter {
-  background-color: #000000;
+.instagram {
+  background-color: #d300c5;
 }
 
 .about-me {
