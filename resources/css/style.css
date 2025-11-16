@@ -77,8 +77,11 @@ h3 {
 h1 {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #fdfdfde6;
   font-size: 2rem;
+  background-image: linear-gradient(to bottom right, #ffffff, #14b8a6, #71717a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 h2 {
