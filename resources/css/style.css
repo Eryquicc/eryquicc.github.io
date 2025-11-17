@@ -294,6 +294,7 @@ header ion-icon {
 }
 
 .github {
+  background-color: #24292e;
   background-clip: padding-box;
   backdrop-filter: blur(20px) saturate(150%) contrast(100%);
   opacity: 0%;
@@ -302,6 +303,7 @@ header ion-icon {
 }
 
 .discord {
+  background-color: #5865F2;
   background-clip: padding-box;
   backdrop-filter: blur(20px) saturate(150%) contrast(100%);
   opacity: 0%;
@@ -310,6 +312,7 @@ header ion-icon {
 }
 
 .youtube {
+  background-color: #FF0000;
   background-clip: padding-box;
   backdrop-filter: blur(20px) saturate(150%) contrast(100%);
   opacity: 0%;
@@ -318,6 +321,7 @@ header ion-icon {
 }
 
 .instagram {
+  background-color: #d300c5;
   background-clip: padding-box;
   backdrop-filter: blur(20px) saturate(150%) contrast(100%);
   opacity: 0%;
@@ -336,6 +340,7 @@ header ion-icon {
 }
 
 .website {
+  background-color: #117b63;
   background-clip: padding-box;
   backdrop-filter: blur(20px) saturate(150%) contrast(100%);
   opacity: 0%;
@@ -344,6 +349,7 @@ header ion-icon {
 }
 
 .quincetart10 {
+  background-color: #008a00;
   background-clip: padding-box;
   backdrop-filter: blur(20px) saturate(150%) contrast(100%);
   opacity: 0%;
@@ -352,6 +358,7 @@ header ion-icon {
 }
 
 .user0 {
+  background-color: #003366;
   background-clip: padding-box;
   backdrop-filter: blur(20px) saturate(150%) contrast(100%);
   opacity: 0%;
@@ -360,6 +367,7 @@ header ion-icon {
 }
 
 .stumpy {
+  background-color: #009000;
   background-clip: padding-box;
   backdrop-filter: blur(20px) saturate(150%) contrast(100%);
   opacity: 0%;
